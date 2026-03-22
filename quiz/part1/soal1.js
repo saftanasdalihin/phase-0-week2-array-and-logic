@@ -9,12 +9,12 @@ let input = [
                 ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
             ]
 
-function dataHandling(input) {
-    for (let i = 0; i < input.length; i++) {
-        console.log("Nomor ID:  " + input[i][0]);
-        console.log("Nama Lengkap:  " + input[i][1]);
-        console.log("TTL:  " + input[i][2] + " " + input[i][3]);
-        console.log("Hobi:  " + input[i][4]);
+function dataHandling(data) {
+    for (let i = 0; i < data.length; i++) {
+        console.log("Nomor ID:  " + data[i][0]);
+        console.log("Nama Lengkap:  " + data[i][1]);
+        console.log("TTL:  " + data[i][2] + " " + data[i][3]);
+        console.log("Hobi:  " + data[i][4]);
         console.log(" ");
     }
 }
