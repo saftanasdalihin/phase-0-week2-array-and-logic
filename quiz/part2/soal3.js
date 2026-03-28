@@ -1,7 +1,7 @@
 function hitungJumlahKata(kalimat) {
   // you can only write your code here!
   const splitKalimat = kalimat.split(" ");
-  console.log(splitKalimat.length);
+  return splitKalimat.length;
 }
 
 // TEST CASES
