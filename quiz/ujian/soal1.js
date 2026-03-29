@@ -16,9 +16,8 @@ function targetTerdekat(arr) {
             return jarak;
         }
       }
-
   }
-  return jumlahSpasi;
+  return jarak;
 }
 
 // TEST CASES
