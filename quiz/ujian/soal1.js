@@ -6,18 +6,27 @@ function targetTerdekat(arr) {
 
   // jawaban
 
-  // kerangka berpikir
-  // kita mulai hitung spasi saat i = "o", dan hentikan ketika i = "x". klo gaada i = "x", return 0.
-  let jarak = 0;
-  for (let i = 0; i < arr.length - 1; i++) {
-        jarak += 1;
-      for (let j = i + 1; j < arr.length; j++) {
-        if (arr[j] === "x") {
-            return jarak;
-        }
-      }
+  // --- kerangka berpikir ---
+  // kita cari dan simpen dlu posisi "o" dan posisi "x" dalam bentuk array, 
+  // terus kita pilih posisi antara "o" dan "x" yg saling berdekatan.
+  // lalu hitung selisihnya.
+  let posO = [];
+  let posX = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "o") {
+      posO = [i];
+      console.log("posisi 'o' ada di " + [i]);
+    }
   }
-  return jarak;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "x") {
+      posX = [i];
+      console.log("posisi 'x' ada di " + [i]);
+    } 
+  }
+  // sekarang kita udh dapet posisinya. tantangan selanjutnya, gimana caranya kita pilih posisi "o" dan "x" yg berdekatan?
+  // I'M STUCK NOW
+
 }
 
 // TEST CASES
